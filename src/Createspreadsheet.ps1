@@ -9,5 +9,5 @@ Date,Lana,Reanne,Ally,Cory, Greg
 
 $c1 = New-ExcelChartDefinition -ChartType line -YRange "Lana", "Reanne", "Ally", "Cory", "Greg" -XRange "Date" -Title "ACE" -SeriesHeader "Lana", "Reanne", "Ally", "Cory", "Greg"
 
-$greg= $data | ConvertFrom-Csv 
-$greg | Export-Excel -Path  'C:\Users\posehnc\Desktop\AceCreate.xlsx' -AutoFilter -AutoNameRange -AutoSize -ExcelChartDefinition $c1  -Show
+$greg= $data | ConvertFrom-Csv
+$greg | Export-Excel -Path  '$C:\Users\$Env:USERNAME\Desktop\AceCreate.xlsx' -AutoFilter -AutoNameRange -AutoSize -ExcelChartDefinition $c1  -Show
